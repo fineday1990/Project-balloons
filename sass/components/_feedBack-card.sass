@@ -4,9 +4,15 @@
     box-shadow: $box-shodow
     margin: 0 auto
     padding: 6rem
-    transform: skewX(330deg)
+    transform: skewX(334deg)
     & > *
-        transform: skewX(-330deg)
+        transform: skewX(-334deg)
+    @include respond(tab-port)
+        padding: 3rem
+        transform: skewX(350deg)
+        & > *
+            transform: skewX(-350deg)
+
     &__img
         width: 15rem
         height: 15rem
